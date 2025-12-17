@@ -1,4 +1,4 @@
-def Run_Length_Encoding(arr):
+def Run_Length_Encoding(arr=[1, 1, 1, 2, 2, 3]):
     arr12 = arr[:]
     j = len(arr) - 1
     i = 0
