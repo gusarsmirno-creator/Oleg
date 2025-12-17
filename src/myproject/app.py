@@ -3,7 +3,7 @@ from myproject.utils import greet
 
 def main():
     print(greet("World"))
-    print(greet("Hello negr"))
+    print(greet("Hello Russian turist"))
 
 
 if __name__ == "__main__":
