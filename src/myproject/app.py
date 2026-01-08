@@ -1,12 +1,12 @@
 from utils import greet
-from newpo import Run_Length_Encoding
+from newpo import API
 
 
 def main():
     print(greet("World"))
     print(greet("Hello Russian turist"))
 
-    print(Run_Length_Encoding())
+    API()
 
 
 if __name__ == "__main__":

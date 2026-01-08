@@ -1,18 +1,10 @@
-def Run_Length_Encoding(arr=[1, 1, 1, 2, 2, 3]):
-    arr12 = arr[:]
-    j = len(arr) - 1
-    i = 0
-    for _ in range(j):
-        if arr[i] == arr[i + 1]:
-            arr.pop(i)
-            j -= 1
-        else:
-            i += 1
-    vas = []
-    vas22 = ()
-    i1 = 0
-    for i1 in range(len(arr)):
-        f = arr12.count(arr[i1])
-        vas22 = (arr[i1], f)
-        vas.append(vas22)
-    return vas
+import requests
+
+
+def API():
+    r = requests.get("https://api.adviceslip.com/advice", timeout=5)
+    response = requests.get("https://api.adviceslip.com/advice", timeout=5)
+    response.raise_for_status()
+    advice_data = response.json()
+    advice_text = advice_data["slip"]["advice"]
+    print(advice_text)
