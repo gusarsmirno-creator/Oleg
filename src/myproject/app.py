@@ -9,6 +9,7 @@ def main():
     API_client.API()
     API_client.Sesion()
     API_client.Dog()
+    API_client.Four()
 
 
 if __name__ == "__main__":
