@@ -1,14 +1,14 @@
 from utils import greet
-from newpo import API
-from newpo import Sesion
+import API_client
 
 
 def main():
     print(greet("World"))
     print(greet("Hello Russian turist"))
 
-    API()
-    Sesion()
+    API_client.API()
+    API_client.Sesion()
+    API_client.Dog()
 
 
 if __name__ == "__main__":

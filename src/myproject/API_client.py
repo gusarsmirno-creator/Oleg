@@ -11,9 +11,14 @@ def API():
 
 
 def Sesion():
-    session = requests.Session()
-    for i in range(3):  # цикл на 3 раза
-        response = session.get("https://api.adviceslip.com/advice", timeout=5)
+    for i in range(3):
+        response = requests.get("https://api.adviceslip.com/advice", timeout=5)
         print(response.text)
         print("Status code:", response.status_code)
-        print()
+
+
+def Dog(ip="https://dog.ceo/api/breeds/image/random"):
+    r = requests.get(ip, timeout=5)
+    print(r.url)
+    print(r.status_code)
+    print(r.text)
